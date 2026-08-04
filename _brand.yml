@@ -1,0 +1,33 @@
+color:
+  palette:
+    anthrazit: "#1a1a1a"
+    weiss: "#ffffff"
+    stahlblau: "#3f7191" # WCAG AA (4,98:1 auf weiss)
+  foreground: anthrazit
+  background: weiss
+  primary: stahlblau
+
+# Schriften selbst gehostet (keine Google-Requests zur Laufzeit)
+typography:
+  fonts:
+    - family: Source Sans 3
+      source: file
+      files:
+        - path: fonts/SourceSans3-Regular.ttf
+        - path: fonts/SourceSans3-It.ttf
+          style: italic
+        - path: fonts/SourceSans3-Semibold.ttf
+          weight: 600
+        - path: fonts/SourceSans3-SemiboldIt.ttf
+          weight: 600
+          style: italic
+        - path: fonts/SourceSans3-Bold.ttf
+          weight: 700
+        - path: fonts/SourceSans3-BoldIt.ttf
+          weight: 700
+          style: italic
+  base:
+    family: Source Sans 3
+  headings:
+    family: Source Sans 3
+    color: primary
