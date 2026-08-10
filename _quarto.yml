@@ -1,0 +1,37 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Studienreise Leipzig"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Bericht
+  page-footer:
+    center: |
+      Erstellt mit der [Anleitung von Richard Conrardy](https://phbern-rconrardy.github.io/hochschuldidaktik/) und Claude Code (Fable 5). Online bis Ende September 2026.
+
+format:
+  html:
+    toc: true
+    toc-title: "Inhalt"
+    lang: de
+    date-format: "DD.MM.YYYY"
+  typst:
+    papersize: a4
+    lang: de
+    date-format: "DD.MM.YYYY"
+    output-file: leipzig-bericht.pdf
+    include-in-header:
+      text: |
+        #set figure(numbering: none)
+        #set text(hyphenate: false)
+  docx:
+    lang: de
+    date-format: "DD.MM.YYYY"
+    output-file: leipzig-bericht.docx
+  pptx:
+    lang: de
+    date-format: "DD.MM.YYYY"
+    output-file: leipzig-bericht.pptx
